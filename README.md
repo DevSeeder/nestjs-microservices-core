@@ -6,7 +6,7 @@
   </a>
 </div>
 
-<h3 align="center">NestJS Common Package for DevSeeder projects</h3>
+<h3 align="center">NestJS Core Package for DevSeeder projects</h3>
 
 <div align="center">
   <a href="https://nestjs.com" target="_blank">
@@ -17,8 +17,7 @@
 ### Installation
 
 ```bash
-cd nestjs-package-starter
-npm install @devseeder/nestjs-microservices-commons
+npm install @devseeder/nestjs-microservices-core
 ```
 
 ## Contributing
