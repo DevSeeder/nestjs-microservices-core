@@ -41,11 +41,13 @@ export class CustomJwtAuthGuard extends AbstractGuard {
 
       if (tokenPayload.scopes.indexOf(this.scopeADM) !== -1) return true;
 
+      let scopesPermission = 0;
       scopes.forEach((scope) => {
-        if (tokenPayload.scopes.indexOf(scope) === -1) {
-          throw new ForbiddenException('Missing Scope Authorization');
-        }
+        if (tokenPayload.scopes.indexOf(scope) > -1) scopesPermission++;
       });
+
+      if (!scopesPermission)
+        throw new ForbiddenException('Missing Scope Authorization');
 
       return true;
     } catch (err) {
