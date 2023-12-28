@@ -33,16 +33,19 @@
   },
   "bugs": "https://github.com/DevSeeder/nestjs-microservices-core/",
   "dependencies": {
-    "@golevelup/nestjs-rabbitmq": "^3.2.0",
-    "@nestjs/common": "^8.0.0",
+    "@golevelup/nestjs-rabbitmq": "^3.7.0",
+    "@nestjs/common": "^9.0.0",
     "@nestjs/config": "^2.2.0",
-    "@nestjs/core": "^8.0.0",
+    "@nestjs/core": "^9.0.0",
     "@nestjs/jwt": "^9.0.0",
     "@nestjs/mongoose": "^9.2.0",
     "@nestjs/passport": "^9.0.0",
+    "@nestjs/platform-express": "^9.0.0",
+    "amqplib": "^0.10.3",
     "mongoose": "^6.5.3",
     "nest": "^0.1.6",
-    "passport-jwt": "^4.0.0"
+    "passport-jwt": "^4.0.0",
+    "rxjs": "^7.8.1"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -57,5 +60,8 @@
     },
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.4"
   }
 }
