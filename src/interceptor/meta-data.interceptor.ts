@@ -2,14 +2,14 @@ import {
   Injectable,
   NestInterceptor,
   ExecutionContext,
-  CallHandler
+  CallHandler,
 } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
 import { Observable } from 'rxjs';
 
 @Injectable()
 export class MetaDataInterceptor implements NestInterceptor {
-  constructor(private readonly reflector: Reflector) {}
+  constructor(protected readonly reflector: Reflector) {}
 
   intercept(context: ExecutionContext, next: CallHandler): Observable<any> {
     const request = context.switchToHttp().getRequest();
