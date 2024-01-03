@@ -23,6 +23,7 @@ export class EntityJwtAuthGuard extends CustomJwtAuthGuard {
     protected readonly reflector: Reflector,
     protected readonly jwtService: JwtService,
     protected readonly configService: ConfigService,
+    @Inject(SchemaDependecyTokens.SCOPE_KEY)
     protected readonly scopeKey: string,
     @Inject(SchemaDependecyTokens.ENTITY_SCHEMA_DB)
     protected readonly entitySchemaData: EntitySchema[],
