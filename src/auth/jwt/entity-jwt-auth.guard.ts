@@ -12,11 +12,9 @@ import { CustomErrorException } from '@devseeder/microservices-exceptions';
 import {
   EntitySchema,
   ErrorService,
-  SchemaDependecyTokens,
 } from '@devseeder/nestjs-microservices-schemas';
 import { CustomJwtAuthGuard } from './custom-jwt-auth.guard';
 import { ErrorAuthKey } from '../../enum/error-auth-keys.enum';
-import { AuthDependecyTokens } from '../../app.constants';
 
 @Injectable()
 export class EntityJwtAuthGuard extends CustomJwtAuthGuard {
@@ -24,11 +22,8 @@ export class EntityJwtAuthGuard extends CustomJwtAuthGuard {
     protected readonly reflector: Reflector,
     protected readonly jwtService: JwtService,
     protected readonly configService: ConfigService,
-    @Inject(AuthDependecyTokens.SCOPE_KEY)
     protected readonly scopeKey: string,
-    @Inject(AuthDependecyTokens.ENTITY_SCHEMA_DB)
     protected readonly entitySchemaData: EntitySchema[],
-    @Inject(ErrorService)
     protected readonly errorService: ErrorService,
   ) {
     super(reflector, jwtService, configService, `${scopeKey}/ADM`);
