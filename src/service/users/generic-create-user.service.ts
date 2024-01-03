@@ -15,9 +15,9 @@ import {
   GenericRepository,
 } from '@devseeder/nestjs-microservices-commons';
 import { ClientAuthService } from '../client/client-auth.service';
-import { UserAuth } from 'src/auth/model/user-auth.model';
-import { UserBodyDto } from 'src/dto/user.dto';
-import { AuthDITokens } from 'src/app.constants';
+import { UserAuth } from '../../auth/model/user-auth.model';
+import { UserBodyDto } from '../../dto/user.dto';
+import { AuthDITokens } from '../../app.constants';
 
 @Injectable({ scope: Scope.REQUEST })
 export class GenericCreateUserService<
