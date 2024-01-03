@@ -1,6 +1,6 @@
 {
   "name": "@devseeder/nestjs-microservices-core",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "NestJS Core Package for DevSeeder projects",
   "author": "Maick Speck <maick@devseeder.com>",
   "license": "MIT",
@@ -36,6 +36,7 @@
     "@devseeder/microservices-exceptions": "^1.0.7",
     "@devseeder/nestjs-microservices-schemas": "^1.0.28",
     "@golevelup/nestjs-rabbitmq": "^3.7.0",
+    "@nestjs/axios": "^3.0.1",
     "@nestjs/common": "^9.0.0",
     "@nestjs/config": "^2.2.0",
     "@nestjs/core": "^9.0.0",
