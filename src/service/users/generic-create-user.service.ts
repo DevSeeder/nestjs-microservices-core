@@ -34,7 +34,6 @@ export class GenericCreateUserService<
     @Inject(AuthDITokens.SCOPE_KEY) protected readonly scopeKey?: string,
     protected readonly clientAuthService?: ClientAuthService,
     @Inject(AuthDITokens.PROJECT_KEY) protected readonly projectKey?: string,
-
   ) {
     super(
       repository,
@@ -57,7 +56,7 @@ export class GenericCreateUserService<
     userAuth.name = user.name;
     userAuth.username = user.username;
     userAuth.password = user.password;
-    userAuth.projectKey = ;
+    userAuth.projectKey = this.projectKey;
     userAuth.scopes = [
       `${this.scopeKey}/USER`,
       `${this.scopeKey}/UPDATE_PASSWORD`,
