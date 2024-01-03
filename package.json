@@ -1,6 +1,6 @@
 {
   "name": "@devseeder/nestjs-microservices-core",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "NestJS Core Package for DevSeeder projects",
   "author": "Maick Speck <maick@devseeder.com>",
   "license": "MIT",
