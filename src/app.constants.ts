@@ -1,4 +1,4 @@
-export declare enum AuthDependecyTokens {
+export enum AuthDependecyTokens {
   PROJECT_KEY = 'PROJECT_KEY',
   SCOPE_KEY = 'SCOPE_KEY',
   FIELD_SCHEMA_DB = 'FIELD_SCHEMA_DB',
