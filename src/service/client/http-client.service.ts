@@ -5,7 +5,7 @@ import { firstValueFrom } from 'rxjs';
 
 @Injectable()
 export abstract class HttpClientService {
-  private logger: Logger = new Logger(HttpClientService.name);
+  protected logger: Logger = new Logger(HttpClientService.name);
   protected headersRequest: any;
 
   constructor(
