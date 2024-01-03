@@ -1,19 +1,17 @@
 import { CustomErrorException } from '@devseeder/microservices-exceptions';
-import { AbstractService } from '@devseeder/nestjs-microservices-commons';
 import { HttpService } from '@nestjs/axios';
-import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
+import { HttpException, HttpStatus, Injectable, Logger } from '@nestjs/common';
 import { firstValueFrom } from 'rxjs';
 
 @Injectable()
-export abstract class HttpClientService extends AbstractService {
+export abstract class HttpClientService {
+  private logger: Logger = new Logger(HttpClientService.name);
   protected headersRequest: any;
 
   constructor(
     protected readonly url: string,
     protected readonly httpService: HttpService,
-  ) {
-    super();
-  }
+  ) {}
 
   protected getHeaders() {
     return {
