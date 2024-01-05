@@ -1,6 +1,6 @@
 {
   "name": "@devseeder/nestjs-microservices-core",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "NestJS Core Package for DevSeeder projects",
   "author": "Maick Speck <maick@devseeder.com>",
   "license": "MIT",
@@ -33,8 +33,8 @@
   },
   "bugs": "https://github.com/DevSeeder/nestjs-microservices-core/",
   "dependencies": {
-    "@devseeder/microservices-exceptions": "^1.0.7",
-    "@devseeder/nestjs-microservices-commons": "^1.0.48",
+    "@devseeder/microservices-exceptions": "^1.0.8",
+    "@devseeder/nestjs-microservices-commons": "^1.0.49",
     "@devseeder/nestjs-microservices-schemas": "^1.0.28",
     "@golevelup/nestjs-rabbitmq": "^3.7.0",
     "@nestjs/axios": "^3.0.1",
